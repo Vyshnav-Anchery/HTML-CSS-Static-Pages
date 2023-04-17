@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .nav{
+            display: flex;
+            width: 100%;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 19px;
+        }
+        .navbtn{
+            padding: 0 0 0 16px;
+            display: flex;
+        }
+        .navbtn1 ul{
+            list-style: none;
+            display: flex;
+        }
+        .navbtn1 li{
+            padding: 13px 16px;
+        }
+        .navbtn ul{
+            list-style: none;
+            display: flex;
+        }
+        .navbtn li{
+            padding: 13px 16px;
+        }
+        .body1{
+            background-image: url(/CS-The-Automate-Beer-Question-30_drupal_5E_lead_frame-13-22.jpg);
+            background-size: cover;
+            margin-top: -45px;
+            padding-left: 32px;
+        }
+        .body1 h1{
+            font-weight: 300;
+            font-size: 60px;
+        }
+        .btns{
+            display: flex;
+            margin-top: 20%;
+            padding-bottom: 50px;
+        }
+        .btn1{
+            border: none;
+            background-color: #0354e9;
+            color: white;
+            padding: 13px 63px 11px 15px;
+        }
+        .btn2{
+            margin-left: 10px;
+            border: 1px solid #0354e9;
+            background-color: transparent;
+            padding: 13px 63px 11px 15px;
+        }
+        .body2{
+            background-color: rgb(225, 225, 225);
+            display: flex;
+            justify-content: space-between;
+            padding: 0% 3% 0% 3%;
+        }
+        .btn3{
+            height: 50px;
+            margin-top: 30px;
+            border: none;
+            background-color: #0354e9;
+            color: white;
+            padding: 13px 63px 11px 15px;
+        }
+        .body3{
+            display: flex;
+            width: 100%;
+            margin: 50px 50px 60px 60px;
+        }
+        .card2{
+            margin-left: 30px;
+        }
+        .cardcontent2 a,i{
+            color: #0354e9;
+            text-decoration: none;
+        }
+        .card2 img{
+            height: 192px;
+            width: 340px;
+        }
+        .body4{
+            display: flex;
+            margin-left: 4%;
+        }
+        .body4 ul{
+            list-style: none;
+            display: flex;
+            margin-left: 20%;
+        }
+        .body4 li{
+            padding-left: 20px;
+        }
+        .body5{
+            display: flex;
+            justify-content: right;
+            margin-top: 50px;
+        }
+        .body5 img{
+            margin-left: 38%;
+        }
+        .body5 h3{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .body5 a{
+            text-decoration: none;
+            color: #0354e9;
+        }
+        .body6{
+            background-image: url(/Asian-paint.jpg);
+            background-size: cover;
+            padding-left: 30px;
+            padding-bottom: 60px;
+        }
+        .body6 h1{
+            padding-top: 60px;
+            font-size: 60px;
+            font-weight: 100;
+        }
+        .body6 p{
+            font-size: 24px;
+        }
+        .body7{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .box{
+            width: 370px;
+            background-color: #f4f4f4;
+            padding: 16px;
+        }
+        .box1{
+            width: 380px;
+            background-color: #0354e9;
+            padding: 16px;
+            text-align: left ;
+        }
+        .boxes{
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding-left: 7%;
+        }
+        .body8{
+            background-image: url(/Threat-Intelligence-Index\ \(1\).jpg);
+            background-size: cover;
+            padding-left: 30px;
+            padding-bottom: 60px;
+        }
+        .body8 h1{
+            padding-top: 60px;
+            font-size: 60px;
+            font-weight: 100;
+        }
+        .body8 p{
+            font-size: 24px;
+            padding-bottom: 50px;
+        }
+        .footer{
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            padding-bottom: 30px;
+            margin-bottom: -10px;
+        }
+        .footer ul{
+            list-style: none;
+            padding: 40px 10px 0px;
+        }
+        .footer li{
+            padding-top: 7px;
+        }
+        .head{
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+        .last{
+            margin-top: -15px;
+            background-color: #f4f4f4;
+            padding-bottom: 30px;
+        }
+        .last ul{
+            list-style: none;
+            display: flex;
+        }
+        .last li{
+            padding-right: 20px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navbtn1">
+            <ul>
+                <li><svg focusable="false" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" width="58px" height="23px" viewBox="0 0 58 23" data-di-rand="1681711926175"><!----><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ibm-8-bar-logo--h15-copy" fill="#161616"><path d="M58,21.4666667 L58,23 L50.3684211,23 L50.3684211,21.4666667 L58,21.4666667 Z M39.6842105,21.4666667 L39.6842105,23 L32.0526316,23 L32.0526316,21.4666667 L39.6842105,21.4666667 Z M45.6385329,21.4666667 L45.0245693,23 L44.41871,21.4666667 L45.6385329,21.4666667 Z M28.5421053,21.4666667 C27.4471432,22.4188667 26.0029202,23 24.3905263,23 L24.3905263,23 L12.2105263,23 L12.2105263,21.4666667 Z M10.6842105,21.4666667 L10.6842105,23 L0,23 L0,21.4666667 L10.6842105,21.4666667 Z M39.6842105,18.4 L39.6842105,19.9333333 L32.0526316,19.9333333 L32.0526316,18.4 L39.6842105,18.4 Z M46.8318522,18.4 L46.2377311,19.9333333 L43.8212353,19.9333333 L43.2226426,18.4 L46.8318522,18.4 Z M30.0684211,18.4 C29.9306437,18.9451697 29.7105614,19.4599515 29.4273684,19.9333333 L29.4273684,19.9333333 L12.2105263,19.9333333 L12.2105263,18.4 Z M10.6842105,18.4 L10.6842105,19.9333333 L0,19.9333333 L0,18.4 L10.6842105,18.4 Z M58,18.4 L58,19.9333333 L50.3684211,19.9333333 L50.3684211,18.4 L58,18.4 Z M54.9473684,15.3333333 L54.9473684,16.8666667 L50.3684211,16.8666667 L50.3684211,15.3333333 L54.9473684,15.3333333 Z M39.6842105,15.3333333 L39.6842105,16.8666667 L35.1052632,16.8666667 L35.1052632,15.3333333 L39.6842105,15.3333333 Z M48.0292704,15.3333333 L47.4295831,16.8666667 L42.6233978,16.8666667 L42.019006,15.3333333 L48.0292704,15.3333333 Z M29.8547368,15.3333333 C29.991899,15.8221879 30.0684211,16.3357152 30.0684211,16.8666667 L30.0684211,16.8666667 L24.4210526,16.8666667 L24.4210526,15.3333333 Z M19.8421053,15.3333333 L19.8421053,16.8666667 L15.2631579,16.8666667 L15.2631579,15.3333333 L19.8421053,15.3333333 Z M7.63157895,15.3333333 L7.63157895,16.8666667 L3.05263158,16.8666667 L3.05263158,15.3333333 L7.63157895,15.3333333 Z M54.9473684,12.2666667 L54.9473684,13.8 L50.3684211,13.8 L50.3684211,12.2666667 L54.9473684,12.2666667 Z M39.6842105,12.2666667 L39.6842105,13.8 L35.1052632,13.8 L35.1052632,12.2666667 L39.6842105,12.2666667 Z M49.2252679,12.2666667 L48.6284686,13.8 L41.4089474,13.8 L40.8168134,12.2666667 L49.2252679,12.2666667 Z M27.9773684,12.2666667 C28.5037637,12.6994848 28.9570701,13.2181697 29.3052632,13.8 L29.3052632,13.8 L15.2631579,13.8 L15.2631579,12.2666667 Z M7.63157895,12.2666667 L7.63157895,13.8 L3.05263158,13.8 L3.05263158,12.2666667 L7.63157895,12.2666667 Z M44.5987396,9.2 L45.0263158,10.4393515 L45.4535426,9.2 L54.9473684,9.2 L54.9473684,10.7333333 L50.3684211,10.7333333 L50.3684211,9.32433939 L49.8494737,10.7333333 L40.1878947,10.7333333 L39.6842105,9.3242 L39.6842105,10.7333333 L35.1052632,10.7333333 L35.1052632,9.2 L44.5987396,9.2 Z M7.63157895,9.2 L7.63157895,10.7333333 L3.05263158,10.7333333 L3.05263158,9.2 L7.63157895,9.2 Z M29.3052632,9.2 C28.9570701,9.7818303 28.5037637,10.3003758 27.9773684,10.7333333 L27.9773684,10.7333333 L15.2631579,10.7333333 L15.2631579,9.2 Z M54.9473684,6.13333333 L54.9473684,7.66666667 L45.9831118,7.66666667 L46.5234001,6.13333333 L54.9473684,6.13333333 Z M43.534302,6.13333333 L44.0745993,7.66666667 L35.1052632,7.66666667 L35.1052632,6.13333333 L43.534302,6.13333333 Z M30.0684211,6.13333333 C30.0684211,6.66414545 29.991899,7.17767273 29.8547368,7.66666667 L29.8547368,7.66666667 L24.4210526,7.66666667 L24.4210526,6.13333333 Z M19.8421053,6.13333333 L19.8421053,7.66666667 L15.2631579,7.66666667 L15.2631579,6.13333333 L19.8421053,6.13333333 Z M7.63157895,6.13333333 L7.63157895,7.66666667 L3.05263158,7.66666667 L3.05263158,6.13333333 L7.63157895,6.13333333 Z M42.4774196,3.06666667 L43.0079113,4.6 L32.0527757,4.6 L32.0526316,3.06666667 L42.4774196,3.06666667 Z M58,3.06666667 L58,4.6 L47.0390632,4.6 L47.5903678,3.06666667 L58,3.06666667 Z M29.4273684,3.06666667 C29.7105614,3.54004848 29.9306437,4.0548303 30.0684211,4.6 L30.0684211,4.6 L12.2105263,4.6 L12.2105263,3.06666667 Z M10.6842105,3.06666667 L10.6842105,4.6 L0,4.6 L0,3.06666667 L10.6842105,3.06666667 Z M41.4056725,0 L41.9462722,1.53333333 L32.05278,1.53333333 L32.0526316,0 L41.4056725,0 Z M58,0 L58,1.53333333 L48.1188427,1.53333333 L48.6466706,0 L58,0 Z M24.3905263,0 C25.9912083,0 27.4472798,0.581133333 28.5421053,1.53333333 L28.5421053,1.53333333 L12.2105263,1.53333333 L12.2105263,0 Z M10.6842105,0 L10.6842105,1.53333333 L0,1.53333333 L0,0 L10.6842105,0 Z" id="Combined-Shape"></path></g></g></svg></li>
+                <li>Products &nbsp;<i class="fa fa-angle-down"></i></li>
+                <li>Solutions&nbsp;<i class="fa fa-angle-down"></i></li>
+                <li>Consulting&nbsp;<i class="fa fa-angle-down"></i></li>
+                <li>Support&nbsp;<i class="fa fa-angle-down"></i></li>
+                <li>More&nbsp;<i class="fa fa-angle-down"></i></li>
+            </ul>
+        </div>
+        <div class="navbtn">
+            <ul>
+                <li><i class="material-icons">&#xe8b6;</i></li>
+                <li><i class="material-icons">&#xe7ff;</i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body1">
+        <h1>What if automation <br> could keep your supply <br> chain taps open?</h1>
+        <div class="btns">
+            <button class="btn1">Explore Automation <i style="font-size:24px;padding-left: 20px;" class="fa">&#xf178;</i></button>
+            <button class="btn2">Ask Me Anything on Automation <i style="font-size:24px" class="fa">&#xf178;</i></button>
+        </div>
+    </div>
+    <div class="body2">
+        <h1>Building secure and open digital ecosystems with AI- <br> enabled integration</h1>
+        <button class="btn3"> Explore IBM Integration <i style="font-size:24px;padding-left: 20px;" class="fa">&#xf178;</i></button>
+    </div>
+    <div class="body3">
+        <div>
+            <h3>More ways to create with <br> IBM</h3>
+            <p>We enable people, ideas and <br> technologies to make the world <br> work better through hybrid cloud <br> and AI</p>
+        </div>
+        <div class="card2">
+            <img src="/CS_The_Modernize_Banking_Question_V1_30_mobile-frame-04-30_drupal.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>Make analyzing data no big deal</h3><br><br><br><br>
+                <a href="">Watch the video (00:30)</a>
+                <i class="material-icons">play_circle_outline</i><br><br>
+                <a href="">Explore data fabric <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="/CS_The_Sustainability_Building_Question_30_mobile-07-00_drupal.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>Use data to save money, energy and the planet</h3><br><br><br><br>
+                <a href="">Watch the video (00:30) </a>
+                <i class="material-icons">play_circle_outline</i><br><br>
+                <a href="">See sustainability solutions <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="/CS_the_transform_masters_question_30_mobile_frame00_drupal_0.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>Use data to save money, energy and the planet</h3><br><br><br><br>
+                <a href="">Watch the video (00:30) </a>
+                <i class="material-icons">play_circle_outline</i><br><br>
+                <a href="">See sustainability solutions <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="body4">
+        <h3>Consulting</h3>
+        <ul>
+            <li><p style="border-bottom: 3px solid #0354e9;">Services</p></li>
+            <li><p>Strategy</p></li>
+            <li><p>Experience</p></li>
+            <li><p>Technology</p></li>
+            <li><p>Operations</p></li>
+            <li><p>Partners</p></li>
+        </ul>
+    </div>
+    <div class="body5">
+        <div><img src="/XLG - IBM Consulting - Overview.jpg" width="60%" alt=""></div>
+        <div style="margin-right: 50px;"> 
+            <h3>Deliver impact <br> faster</h3>
+            <p>Solve the toughest challenges with creative, <br> new approaches and IBM experts by your <br> side.</p>
+            <br><br>
+            <a href="">Learn about consulting services <i style="font-size:24px" class="fa">&#xf178;</i> </a>
+        </div>
+    </div>
+    <div class="body6">
+        <h1>Simplifying the <br> sales process <br> through <br> automation</h1>
+        <p>Asian Paints deploys automation to simplify and speed up trade promotion execution</p>
+        <button class="btn3"> Read the story <i style="font-size:24px;padding-left: 20px;" class="fa">&#xf178;</i></button>
+    </div>
+    <div class="body7">
+        <div style="margin-left: 2%;">
+            <h6 style="font-size: 16px;">Explore products</h6>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926190"><g id="love"><path fill="#5596e6" id="love_1_" d="M16.032,29.247c-0.092,0-0.185-0.035-0.255-0.105L3.008,16.373c-1.507-1.507-2.337-3.506-2.337-5.629 c0-2.139,0.83-4.147,2.337-5.655c1.506-1.506,3.508-2.335,5.639-2.337c0,0,0.001,0,0.002,0c2.132,0,4.136,0.83,5.643,2.337 l1.74,1.74l1.74-1.74c1.507-1.507,3.511-2.337,5.642-2.337c0.003,0,0.005,0,0.008,0c2.128,0.002,4.129,0.832,5.635,2.337 c1.507,1.508,2.337,3.511,2.337,5.642s-0.83,4.134-2.337,5.642L16.287,29.142C16.216,29.212,16.124,29.247,16.032,29.247z  M8.649,3.473c0,0-0.001,0-0.002,0C6.709,3.474,4.888,4.229,3.518,5.599C2.147,6.97,1.392,8.797,1.392,10.744 c0,1.931,0.755,3.749,2.126,5.119l0,0l12.514,12.514l12.514-12.514c1.371-1.371,2.126-3.193,2.126-5.132s-0.755-3.761-2.126-5.132 c-1.37-1.369-3.19-2.124-5.125-2.126c-0.003,0-0.006,0-0.008,0c-1.938,0-3.761,0.754-5.132,2.126l-1.995,1.995 c-0.141,0.141-0.369,0.141-0.51,0l-1.995-1.995C12.412,4.228,10.588,3.473,8.649,3.473z"></path></g><g id="Layer_1"></g></svg>
+                <br>
+                <p style="display: flex;justify-content: space-between;">Featured <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">AI & machine learning <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg id="Layer_1" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926192"><path fill="#5596e6" id="heat--map--02_1_" d="M18,31.36c-1.301,0-2.36-1.059-2.36-2.36s1.059-2.36,2.36-2.36c1.302,0,2.36,1.059,2.36,2.36 S19.302,31.36,18,31.36z M18,27.36c-0.904,0-1.64,0.735-1.64,1.64s0.736,1.64,1.64,1.64s1.64-0.735,1.64-1.64S18.904,27.36,18,27.36 z M7,31.36c-2.956,0-5.36-2.405-5.36-5.36c0-1.006,0.287-1.977,0.833-2.835C1.385,22.748,0.64,21.7,0.64,20.5 c0-1.577,1.283-2.86,2.86-2.86s2.86,1.283,2.86,2.86c0,0.061-0.002,0.121-0.007,0.183C9.599,20.266,12.36,22.831,12.36,26 C12.36,28.955,9.956,31.36,7,31.36z M3.5,18.36c-1.18,0-2.14,0.96-2.14,2.14c0,1.035,0.742,1.919,1.764,2.102 c0.124,0.022,0.228,0.107,0.272,0.226c0.045,0.117,0.026,0.25-0.051,0.35C2.701,24.007,2.36,24.983,2.36,26 c0,2.559,2.082,4.64,4.64,4.64s4.64-2.081,4.64-4.64S9.559,21.36,7,21.36c-0.326,0-0.656,0.038-1.01,0.118 c-0.123,0.027-0.251-0.011-0.338-0.102c-0.087-0.09-0.121-0.22-0.089-0.341C5.615,20.834,5.64,20.664,5.64,20.5 C5.64,19.32,4.68,18.36,3.5,18.36z M28,28.36c-1.853,0-3.36-1.508-3.36-3.36s1.508-3.36,3.36-3.36s3.36,1.508,3.36,3.36 S29.853,28.36,28,28.36z M28,22.36c-1.456,0-2.64,1.184-2.64,2.64s1.184,2.64,2.64,2.64s2.64-1.184,2.64-2.64S29.456,22.36,28,22.36 z M17,23.36c-1.853,0-3.36-1.508-3.36-3.36c0-2.071,1.926-3.74,4.017-3.289c0.144-1.166,1.14-2.071,2.343-2.071 c1.302,0,2.36,1.059,2.36,2.36c0,1.203-0.906,2.199-2.071,2.343c0.047,0.221,0.071,0.44,0.071,0.657 C20.36,21.853,18.853,23.36,17,23.36z M17,17.36c-1.456,0-2.64,1.184-2.64,2.64s1.185,2.64,2.64,2.64c1.456,0,2.64-1.184,2.64-2.64 c0-0.289-0.056-0.591-0.167-0.896c-0.043-0.115-0.022-0.245,0.053-0.343s0.199-0.146,0.318-0.139L20,18.64 c0.904,0,1.64-0.735,1.64-1.64s-0.735-1.64-1.64-1.64s-1.64,0.736-1.64,1.64c0,0.004,0.017,0.148,0.018,0.152 c0.013,0.124-0.039,0.245-0.137,0.321c-0.098,0.078-0.227,0.097-0.345,0.056C17.584,17.415,17.29,17.36,17,17.36z M28,17.36 c-0.75,0-1.36-0.61-1.36-1.36s0.61-1.36,1.36-1.36s1.36,0.61,1.36,1.36S28.75,17.36,28,17.36z M28,15.36 c-0.353,0-0.64,0.287-0.64,0.64s0.287,0.64,0.64,0.64s0.64-0.287,0.64-0.64S28.353,15.36,28,15.36z M5,15.36 c-1.301,0-2.36-1.059-2.36-2.36S3.699,10.64,5,10.64S7.36,11.699,7.36,13S6.301,15.36,5,15.36z M5,11.36 c-0.904,0-1.64,0.736-1.64,1.64S4.096,14.64,5,14.64S6.64,13.904,6.64,13S5.904,11.36,5,11.36z M12.5,13.36 c-1.577,0-2.86-1.283-2.86-2.86c0-1.385,0.969-2.531,2.281-2.796C11.734,7.153,11.64,6.582,11.64,6c0-2.956,2.404-5.36,5.36-5.36 c2.955,0,5.36,2.404,5.36,5.36s-2.405,5.36-5.36,5.36c-0.581,0-1.152-0.095-1.705-0.282C15.031,12.391,13.885,13.36,12.5,13.36z  M17,1.36c-2.559,0-4.64,2.082-4.64,4.64c0,0.641,0.133,1.267,0.396,1.862c0.048,0.109,0.039,0.236-0.025,0.337 c-0.064,0.102-0.174,0.165-0.294,0.168C11.272,8.401,10.36,9.338,10.36,10.5c0,1.18,0.96,2.14,2.14,2.14 c1.161,0,2.098-0.912,2.132-2.077c0.003-0.12,0.066-0.229,0.167-0.293s0.229-0.074,0.337-0.025c0.598,0.262,1.225,0.396,1.864,0.396 c2.559,0,4.64-2.082,4.64-4.64S19.559,1.36,17,1.36z M27,10.36c-1.302,0-2.36-1.059-2.36-2.36S25.698,5.64,27,5.64 S29.36,6.699,29.36,8S28.302,10.36,27,10.36z M27,6.36c-0.904,0-1.64,0.736-1.64,1.64S26.096,9.64,27,9.64S28.64,8.904,28.64,8 S27.904,6.36,27,6.36z M2,9.36C1.25,9.36,0.64,8.75,0.64,8S1.25,6.64,2,6.64S3.36,7.25,3.36,8S2.75,9.36,2,9.36z M2,7.36 C1.647,7.36,1.36,7.647,1.36,8c0,0.353,0.287,0.64,0.64,0.64S2.64,8.353,2.64,8S2.353,7.36,2,7.36z M7,6.36 C5.699,6.36,4.64,5.301,4.64,4S5.699,1.64,7,1.64S9.36,2.699,9.36,4S8.301,6.36,7,6.36z M7,2.36C6.096,2.36,5.36,3.096,5.36,4 S6.096,5.64,7,5.64S8.64,4.904,8.64,4S7.904,2.36,7,2.36z M30,4.36c-0.75,0-1.36-0.61-1.36-1.36S29.25,1.64,30,1.64 S31.36,2.25,31.36,3S30.75,4.36,30,4.36z M30,2.36c-0.353,0-0.64,0.287-0.64,0.64S29.647,3.64,30,3.64S30.64,3.353,30.64,3 S30.353,2.36,30,2.36z"></path><rect id="_Transparent_Rectangle" width="32" height="32" style="fill: none;"></rect></svg>
+                <p style="display: flex;justify-content: space-between;">Analytics<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg id="Layer_1" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926197"><path fill="#5596e6" id="cloud--assets_1_" d="M16,31.36C7.53,31.36,0.64,24.47,0.64,16S7.53,0.64,16,0.64S31.36,7.53,31.36,16 S24.47,31.36,16,31.36z M15.385,30.627c0.204,0.009,0.409,0.013,0.615,0.013c4.741,0,8.963-2.265,11.64-5.77V12.008h0.721v11.831 c1.442-2.268,2.279-4.957,2.279-7.839c0-1.999-0.402-3.904-1.13-5.641L18.363,3.924l0.36-0.624l10.249,5.917 c-2.174-4.141-6.273-7.119-11.101-7.738L6.723,7.916l-0.36-0.624l10.252-5.919C16.412,1.364,16.206,1.36,16,1.36 c-4.741,0-8.963,2.266-11.64,5.771v12.862H3.64V8.161C2.197,10.429,1.36,13.119,1.36,16c0,1.998,0.402,3.903,1.13,5.641 l11.147,6.436l-0.36,0.623L3.028,22.782c2.174,4.142,6.273,7.12,11.101,7.739l11.148-6.437l0.359,0.623L15.385,30.627z M21,21.36h-7 c-0.199,0-0.36-0.161-0.36-0.36v-2.64H11c-0.199,0-0.36-0.161-0.36-0.36v-7c0-0.199,0.161-0.36,0.36-0.36h7 c0.199,0,0.36,0.161,0.36,0.36v2.64H21c0.199,0,0.36,0.161,0.36,0.36v7C21.36,21.199,21.199,21.36,21,21.36z M14.36,20.64h6.28 v-6.28h-2.28V18c0,0.199-0.161,0.36-0.36,0.36h-3.64V20.64z M11.36,17.64h6.28v-6.28h-6.28C11.36,11.36,11.36,17.64,11.36,17.64z"></path><rect id="_Transparent_Rectangle" width="32" height="32" style="fill: none;"></rect></svg>
+                <p style="display: flex;justify-content: space-between;">Asset management <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926198"><title>IBM Automation</title><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ibm--automation-platform" transform="translate(0.640000, 0.640000)" fill="#5596E6" fill-rule="nonzero"><path d="M21.36,30.72 C19.507,30.72 18,29.212 18,27.36 L18,18.36 L18.721,18.36 L18.721,27.36 C18.721,28.816 19.905,30 21.361,30 C22.817,30 24.001,28.816 24.001,27.36 L24.001,22.36 L24.722,22.36 L24.722,27.36 C24.72,29.213 23.213,30.72 21.36,30.72 Z" id="ibm--automation-platform_1_-path"></path><path d="M9.36,30.72 C7.507,30.72 6,29.212 6,27.36 L6,18.36 L6.72,18.36 L6.72,27.36 C6.72,28.816 7.905,30 9.36,30 C10.815,30 12,28.816 12,27.36 L12,3.36 C12,1.507 13.507,0 15.36,0 C17.213,0 18.72,1.507 18.72,3.36 L18.72,12.36 L18,12.36 L18,3.36 C18,1.904 16.816,0.72 15.36,0.72 C13.904,0.72 12.72,1.905 12.72,3.36 L12.72,27.36 C12.72,29.213 11.213,30.72 9.36,30.72 Z" id="ibm--automation-platform_2_-path"></path><polygon id="ibm--automation-platform_3_-path" points="26.615 19.615 26.105 19.105 29.491 15.72 15.36 15.72 15.36 15 29.491 15 26.105 11.614 26.615 11.105 30.869 15.36"></polygon><polygon id="ibm--automation-platform_4_-path" points="9.36 15.72 0.36 15.72 0.36 15 9.36 15"></polygon><path d="M6.72,12.36 L6,12.36 L6,3.36 C6,1.904 4.815,0.72 3.36,0.72 C1.905,0.72 0.72,1.904 0.72,3.36 L0.72,12.36 L0,12.36 L0,3.36 C0,1.507 1.507,0 3.36,0 C5.213,0 6.72,1.507 6.72,3.36 L6.72,12.36 Z" id="ibm--automation-platform_5_-path"></path></g></g></svg> 
+                <p style="display: flex;justify-content: space-between;">Business automation<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg id="Layer_1" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926199"><style type="text/css">
+                    .st0{fill:none;}
+                </style><path fill="#5596e6" id="flexible--compute" d="M13.5,4.5C13.2,4.5,13,4.3,13,4s0.2-0.5,0.5-0.5S14,3.7,14,4S13.8,4.5,13.5,4.5z M14,11 c0-0.3-0.2-0.5-0.5-0.5S13,10.7,13,11s0.2,0.5,0.5,0.5S14,11.3,14,11z M26,30.4h-6v-0.7h2.6v-1.3H17c-0.7,0-1.4-0.6-1.4-1.4v-8 c0-0.7,0.6-1.4,1.4-1.4h12c0.7,0,1.4,0.6,1.4,1.4v8c0,0.7-0.6,1.4-1.4,1.4h-5.6v1.3H26V30.4z M16.4,26.4V27c0,0.3,0.3,0.6,0.6,0.6 h12c0.3,0,0.6-0.3,0.6-0.6v-0.6H16.4z M16.4,25.6h13.3V19c0-0.3-0.3-0.6-0.6-0.6H17c-0.3,0-0.6,0.3-0.6,0.6V25.6z M14,24.4H4 c-0.2,0-0.4-0.2-0.4-0.4v-8h0.7v7.6H14V24.4z M28.4,16h-0.7V8.4H18V7.6h10c0.2,0,0.4,0.2,0.4,0.4V16z M16,14.4H2 c-0.2,0-0.4-0.2-0.4-0.4V9c0-0.2,0.2-0.4,0.4-0.4h14c0.2,0,0.4,0.2,0.4,0.4v5C16.4,14.2,16.2,14.4,16,14.4z M2.4,13.6h13.3V9.4H2.4 V13.6z M10,11.4H4v-0.7h6V11.4z M16,7.4H2C1.8,7.4,1.6,7.2,1.6,7V2c0-0.2,0.2-0.4,0.4-0.4h14c0.2,0,0.4,0.2,0.4,0.4v5 C16.4,7.2,16.2,7.4,16,7.4z M2.4,6.6h13.3V2.4H2.4V6.6z M10,4.4H4V3.6h6V4.4z"></path><rect id="_Transparent_Rectangle" class="st0" width="32" height="32"></rect></svg>
+                <p style="display: flex;justify-content: space-between;">Compute & servers <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg id="Layer_1" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926200"><path fill="#5596e6" id="hard--drive--network_1_" d="M20,6c-0.552,0-1-0.448-1-1s0.448-1,1-1s1,0.448,1,1S20.552,6,20,6z M21,16 c0-0.552-0.448-1-1-1s-1,0.448-1,1s0.448,1,1,1S21,16.552,21,16z M21,27c0-0.552-0.448-1-1-1s-1,0.448-1,1s0.448,1,1,1 S21,27.552,21,27z M24,31.36H1c-0.199,0-0.36-0.161-0.36-0.36v-8c0-0.199,0.161-0.36,0.36-0.36h23c0.199,0,0.36,0.161,0.36,0.36v8 C24.36,31.199,24.199,31.36,24,31.36z M1.36,30.64h22.28v-7.28H1.36V30.64z M31,27.36h-5v-0.72h4.64V16.36H26v-0.72h4.64V5.36H26 V4.64h5c0.199,0,0.36,0.161,0.36,0.36v22C31.36,27.199,31.199,27.36,31,27.36z M24,20.36H1c-0.199,0-0.36-0.161-0.36-0.36v-8 c0-0.199,0.161-0.36,0.36-0.36h23c0.199,0,0.36,0.161,0.36,0.36v8C24.36,20.199,24.199,20.36,24,20.36z M1.36,19.64h22.28v-7.28 H1.36V19.64z M24,9.36H1C0.801,9.36,0.64,9.199,0.64,9V1c0-0.199,0.161-0.36,0.36-0.36h23c0.199,0,0.36,0.161,0.36,0.36v8 C24.36,9.199,24.199,9.36,24,9.36z M1.36,8.64h22.28V1.36H1.36V8.64z"></path><rect id="_Transparent_Rectangle" width="32" height="32" style="fill: none;"></rect></svg>
+                <p style="display: flex;justify-content: space-between;">Database<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <svg id="Layer_1" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve" class="icon icon-black" aria-hidden="true" data-di-rand="1681711926201"><path fill="#5596e6" id="devops_1_" d="M18,31.36h-4c-0.128,0-0.248-0.069-0.312-0.181l-2-3.464c-0.064-0.111-0.064-0.248,0-0.359l2-3.464 c0.064-0.111,0.183-0.181,0.312-0.181h3.792l2.896-5.016c0.1-0.174,0.32-0.231,0.491-0.132c0.173,0.1,0.231,0.319,0.132,0.491 l-2.896,5.017l1.896,3.284c0.064,0.111,0.064,0.248,0,0.359l-2,3.464C18.247,31.291,18.129,31.36,18,31.36z M14.208,30.64h3.584 l1.792-3.104l-1.792-3.104h-3.584l-1.792,3.104L14.208,30.64z M28,25.593h-4c-0.129,0-0.247-0.069-0.312-0.181l-2-3.465 c-0.064-0.111-0.064-0.248,0-0.359l1.896-3.284l-2.896-5.016c-0.1-0.172-0.041-0.393,0.132-0.492c0.171-0.1,0.392-0.041,0.491,0.131 l2.896,5.016H28c0.129,0,0.247,0.069,0.312,0.181l2,3.464c0.064,0.111,0.064,0.248,0,0.359l-2,3.465 C28.247,25.523,28.129,25.593,28,25.593z M24.208,24.872h3.584l1.792-3.104l-1.792-3.104h-3.584l-1.792,3.104L24.208,24.872z  M8,25.593H4c-0.128,0-0.248-0.069-0.312-0.181l-2-3.465c-0.064-0.111-0.064-0.248,0-0.359l2-3.464 C3.752,18.013,3.872,17.943,4,17.943h4c0.128,0,0.248,0.069,0.312,0.181l1.896,3.283H16c0.199,0,0.36,0.161,0.36,0.36 s-0.161,0.36-0.36,0.36h-5.792l-1.896,3.284C8.248,25.523,8.128,25.593,8,25.593z M4.208,24.872h3.584l1.792-3.104l-1.792-3.104 H4.208l-1.792,3.104L4.208,24.872z M11,19.253c-0.125,0-0.246-0.064-0.312-0.181l-2.896-5.016H4c-0.128,0-0.248-0.068-0.312-0.18 l-2-3.464c-0.064-0.111-0.064-0.249,0-0.36l2-3.464C3.752,6.477,3.872,6.408,4,6.408h4c0.128,0,0.248,0.068,0.312,0.18l2,3.464 c0.064,0.111,0.064,0.249,0,0.36l-1.896,3.284l2.896,5.017c0.099,0.172,0.04,0.392-0.132,0.491 C11.124,19.237,11.062,19.253,11,19.253z M4.208,13.336h3.584l1.792-3.104L7.792,7.128H4.208l-1.792,3.104L4.208,13.336z M28,14.056 h-4c-0.129,0-0.247-0.068-0.312-0.18l-1.896-3.285H16c-0.199,0-0.36-0.161-0.36-0.36s0.161-0.36,0.36-0.36h5.792l1.896-3.284 c0.064-0.111,0.183-0.18,0.312-0.18h4c0.129,0,0.247,0.068,0.312,0.18l2,3.464c0.064,0.111,0.064,0.249,0,0.36l-2,3.464 C28.247,13.988,28.129,14.056,28,14.056z M24.208,13.336h3.584l1.792-3.104l-1.792-3.104h-3.584l-1.792,3.104L24.208,13.336z  M11,13.484c-0.061,0-0.123-0.015-0.18-0.048c-0.172-0.1-0.231-0.32-0.132-0.492l2.896-5.016l-1.896-3.284 c-0.064-0.112-0.064-0.249,0-0.36l2-3.464C13.752,0.708,13.872,0.64,14,0.64h4c0.129,0,0.247,0.068,0.312,0.18l2,3.464 c0.064,0.111,0.064,0.249,0,0.36l-2,3.464C18.247,8.22,18.129,8.288,18,8.288h-3.792l-2.896,5.017 C11.245,13.42,11.124,13.484,11,13.484z M14.208,7.568h3.584l1.792-3.104L17.792,1.36h-3.584l-1.792,3.104L14.208,7.568z"></path><rect id="_Transparent_Rectangle" width="32" height="32" style="fill: none;"></rect></svg>
+                <p style="display: flex;justify-content: space-between;">DevOps <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">IT automation<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Middleware <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Middleware <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Middleware <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Quantum <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Security & identity <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Storage <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box">
+                <img class="icon icon-black" aria-hidden="true" src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg" alt="Icon for AI &amp; machine learning">                <br>
+                <p style="display: flex;justify-content: space-between;">Supply chain <i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div class="box1">
+                <p style="display: flex;justify-content: space-between;">Browse our products<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+           
+        </div>
+    </div>
+    <div class="body3">
+        <div>
+            <h3>Inside IBM</h3>
+        </div>
+        <div class="card2">
+            <h3>IBM Careers</h3>
+            <img src="/XLG - Inside IBM - IBM Careers.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>Apply your skills to improve business, <br> society and the human condition. Learn <br> what opportunities exist in our talent <br> network.</h3><br><br><br><br>
+                <a href="">Explore IBM careers <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+        <div class="card2">
+            <h3>Research from IBM Labs</h3>
+            <img src="/XLG - Inside IBM - Research Labs.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>From chips to bots to outer space, go <br> behind the curtain to see what’s next in <br> science and technology.</h3><br><br><br><br>
+                <a href="">See sustainability solutions <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+        <div class="card2">
+            <h3>Corporate Social Responsibility</h3>
+            <img src="/XLG - Inside IBM - Corporate Social Responsibility.jpg" alt="">
+            <div class="cardcontent2">
+                <h3>Use data to save money, energy and the planet</h3><br><br><br><br>
+                <a href="">See sustainability solutions <i style="font-size:24px" class="fa">&#xf178;</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="body8">
+        <h1>X-Force Threat <br> Intelligence <br> Index</h1>
+        <p>Backdoor deployments spiked in <br> 2022 but 67% failed due to defender <br> disruption of ransomware attempts</p>
+        <button class="btn3"> Read the story <i style="font-size:24px;padding-left: 20px;" class="fa">&#xf178;</i></button>
+    </div>
+    <div style="text-align: center;font-size: 32px;padding-bottom: 50px;">
+        <h2>We discover, design and implement technology <br> that helps clients solve problems—and the world <br> run better.</h2><br>
+        <a href="" style="font-size: 16px;color: #0354e9;text-decoration: none;margin-left: -55%;">About IBM <i style="font-size:24px" class="fa"></i></a>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="head">Discover</li>
+            <li>Products</li>
+            <li>Trials</li>
+            <li>Services</li>
+            <li>Industries</li>
+            <li>IBM discounts</li>
+            <li>Case studies</li>
+            <li>Financing</li>
+        </ul>
+        <ul>
+            <li class="head">Learn about</li>
+            <li>What is IaaS ,PaaS & SaaS?</li>
+            <li>What is Cloud Computing?</li>
+            <li>What is Virtual Machine?</li>
+            <li>What is Object Storage?</li>
+            <li>What is Contenarization?</li>
+            <li>What is Kubernetes?</li>
+            <li>What is FaaS?</li>
+        </ul>
+        <ul>
+            <li class="head">Connect with us</li>
+            <li>Engage IBM Consulting</li>
+            <li>Support</li>
+            <li>Find a Business Partner</li>
+            <li>Developers</li>
+            <li>Business Partners</li>
+        </ul>
+        <ul>
+            <li class="head">About IBM</li>
+            <li>Careers</li>
+            <li>Latest news</li>
+            <li>Investor relations</li>
+            <li>Corporate responsibility</li>
+            <li>IBM product recycling</li>
+            <li>About IBM</li>
+            <li></li>
+            <li></li>
+            <li>Select a country/region</li>
+            <li style="display: flex;justify-content: space-between;padding: 10px;"><button style="padding: 0px 27px 0px 10px;">India-English <i class="fa fa-angle-down"></i></button></li>
+        </ul>
+    </div>
+    <div style="background-color: #f4f4f4;"><hr></div>
+    <div class="last">
+        <ul>
+            <li>Contact</li>
+            <li>Privacy</li>
+            <li>Terms of use</li>
+            <li>Accessibility</li>
+            <li>Cookie</li>
+            <li>Preferences</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

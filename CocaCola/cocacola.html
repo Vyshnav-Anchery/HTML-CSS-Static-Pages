@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocaCola</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+        .nav{
+            background-color: white;
+            width: 100%;
+            zoom: 1.0;
+            height: 100px;
+            display: flex;
+            z-index: 1;
+        }
+        .nav:after{
+            content:" ";
+            clear:both;
+            height:0;
+            visibility:hidden;
+        }
+        .dropbutton {
+            background-color: white;
+            color: black;
+            padding-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            width: 110px;
+            display: flex;
+            align-items: center;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdowncontent {
+            display: none;
+            background-color: white;
+            position: absolute;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            box-shadow: 0 14px 24px rgba(0,0,0,.06);
+            flex-direction: column;
+            height: auto;
+            left: -20px;
+            margin: 0;
+            padding: 32px;
+            top: 100%;
+            width: 100px;
+
+          }
+          .dropdowncontent a{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            height: 18px;
+            line-height: 18px;
+            margin: 0 0 9px;
+          }
+          .dropdowncontent a:hover {
+            font-weight: bolder;
+          }
+            
+          .dropdown:hover .dropdowncontent {
+            display: block;
+          }
+            
+          .dropdown:hover .button-text {
+              font-weight: bolder;
+              display: inline-block;
+              border-bottom: 4px solid black;
+              padding-bottom: 20px;
+          }
+          .nav-buttons{
+            background-color: white;
+            height: 100%;
+            letter-spacing: 0;
+            line-height: 17px;
+            position: relative;
+            text-decoration: none;
+            margin-left: 60px;
+
+          }
+          .material-icons{
+            font-size: 13px;
+            color: #4e494977;
+            font-weight: 1;
+          }
+          .contents{
+            margin: 40px 50px;
+          }
+          .cokestudio{
+            align-items: center;
+            background-color: transparent;
+            border: 2px solid #000;
+            border-radius: 48px;
+            display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 14px;
+            justify-content: center;
+            width: 327px;
+          }
+          .cokestudiotext p{
+            font-size: 32px;
+            line-height: 40px;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 0;
+            padding-top: 50%;
+          }
+          .cokestuddiv{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5%;
+          }
+          .pgheading{
+            font-weight: 600;
+            font-family: TCCC-UnityHeadline;
+            font-size: 32px;
+            line-height: 40px;
+          }
+          .card{
+            border-radius: 16px;
+            background-color: white;
+            margin-top: 48px;
+            margin-right: 30px;
+            padding-bottom: 50px;
+        }
+        .card h1{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+            text-align: left
+        }
+        .card p{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            text-align: left;
+        }
+        .cardtext{
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+        .card img{
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+        .cardtext a{
+            text-decoration: none;
+            margin-left: -77%;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            height: 24px;
+        }
+        .card:hover a{
+            color:#6e6e6e;
+        }
+        .hovering{
+            padding: 64px 80px;
+            border-radius: 16px;
+            background-color: white;
+            padding: 64px 80px;
+            width: 350px;
+            box-shadow: 0 14px 18px rgba(0,0,0,.06);
+            z-index: 9;
+            margin: 30px;
+        }
+        .hovering h2{
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+        .hoverimg{
+            border-radius: 16px;
+            
+        }
+        .hovercontainer{
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            margin-top: 160px;
+            position: relative;
+        }
+        .staying{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            right: 360%;
+            z-index: -1;
+        }
+        .brands{
+            margin-top: 35%;
+            text-align: center;
+        }
+        .logodiv{
+            height: 256px;
+            width: 256px;
+            background-color: white;
+            border-radius: 16px;
+            margin: 16px;
+        }
+        .logodiv img{
+            width: 75%;
+            align-items: center ;
+            padding: 32px;
+        }
+        .logos{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .viewallbutton{
+            background-color: black;
+            border: 2px solid #000;
+            border-radius: 48px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 14px;
+            width: 327px;
+            color: white;
+            margin-top: 20px;
+        }
+        .lastpara{
+            margin: 0 8%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .lastpara P{
+            text-align: left;
+            margin-top: 24px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .footer{
+            background-color: #000;
+            color: white;
+            padding: 0% 10%;
+        }
+        .footcont{
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+        .viewallbutton{
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 48px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 14px;
+            width: 327px;
+            color: white;
+            margin-top: 20px;
+        }
+        .lists ul{
+            list-style: none;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        .lists li{
+            margin-bottom: 24px;
+        }
+        .lists{
+            display: flex;
+
+        }
+        .circle{
+            height: 25px;
+            width: 25px;
+            background-color: transparent;
+            border-radius: 48px;
+            border: 2px solid white;
+            display: inline-block;
+            margin-top: 56px;
+        }
+        .circle i{
+            width: 32px;
+            font-size: 20px;
+            padding-left: 3px;
+            padding-top: 2px;
+        }
+        .logntext{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="cont1">
+            <div><img src="/Coke-company-logo-black.svg" alt="" width="125px" height="80px" style="margin-left: 120px;"><br></div>  
+        </div>
+        <div class="nav-buttons">
+            <div class="dropdown">
+                <button class="dropbutton"><p class="button-text">Brands</p></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton"><p class="button-text">Discover<i class="material-icons">chevron_right</i></p></button>
+                <div class="dropdowncontent">
+                    <a href="#">Coke Studio Bharat</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton"><p class="button-text">Impact<i class="material-icons">chevron_right</i></p></button>
+                <div class="dropdowncontent">
+                    <a href="#">Sustainability</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton"><p class="button-text">Shop<i class="material-icons">chevron_right</i></p></button>
+                <div class="dropdowncontent">
+                    <a href="#">Big Basket</a><br>
+                    <a href="">Blinkit</a><br>
+                    <a href="">Flipkart</a><br>
+                    <a href="">Jiomart</a><br>
+                    <a href="">Amazon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <!-- <img class="image1" src="/width1960 (1).png" alt=""> -->
+        <img src="/width1960 (1).jpg" alt="" style="border-radius: 10px" width="100%">
+        <!-- <img class="image3" src="/width1960.jpg" alt=""> -->
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <input type="radio" id="" name="" value="1" checked="checked">
+        <input type="radio" id="" name="" value="2">
+        <input type="radio" id="" name="" value="3">
+    </div>
+    <div style="text-align: center;margin-top: 64px;">
+        <h1 class="pgheading">Experiences</h1>
+        <div class="cokestuddiv">
+            <div class="cokestudiotext">
+                <p>Coke Studio Bharat:<br> Drink. Scan. Unlock <br> Exclusive Music.</p>
+                <button class="cokestudio">Explore Now</button>
+            </div>
+            <div>
+                <img src="/Coke Studi Bharat_Banner_R2_Desktop_640px X 552px_.jpg" alt="" width="90%" style="border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 120px;text-align: center;">
+        <h1 class="pgheading">Sustainability news</h1>
+        <div style="display: flex;justify-content: center;">
+            <div class="card">
+                <img src="/sustainability news world without waste_desktop.jpg" alt="">
+                <div class="cardtext">
+                    <h1>On a mission to a world without waste</h1>
+                    <p>We aim to collect back packaging for recycling <br> equivalent to what we put out in the market by 2030.</p><br><br><br><br>
+                    <a href="">Learn more &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/sustainability news sustainable agriculture_desktop.jpg" alt="">
+                <div class="cardtext">
+                    <h1>Promoting Sustainable Agriculture</h1>
+                    <p>Our efforts are focussed on improving the overall<br>fruit availability, increasing farming efficiency as well<br>as building food processing capacity in the country,<br>thereby helping farmers increase their income.</p><br>
+                    <a href="">Learn more &nbsp;<i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;margin-left: 10%;">
+        <div class="hovercontainer">
+            <div class="staying">
+                <img class="hoverimg" src="/640x552.jpg" alt="">
+            </div>
+            <div class="hovering">
+                <h2>Presenting the “Super 30” glorious years of Limca® Book of Records!</h2>
+                <p>This year’s Limca Book of Records is a combined edition of two challenging years and celebrates stellar victories and accomplishments in human endeavor, education, adventure, business, cinema, the natural world, literature, and the arts.</p>
+                <br><br>
+                <button class="cokestudio">Learn more</button>
+            </div>
+        </div>
+    </div>
+    <div class="brands" >
+        <h1>Explore Our Brands</h1>
+        <div class="logos">
+            <div class="logodiv">
+                <img src="/Coca-Cola-Logo.svg" alt="">
+            </div>
+            <div class="logodiv">
+                <img src="/Sprite Logo.svg" alt="">
+            </div>
+            <div class="logodiv">
+                <img src="/TU Logo.svg" alt="">
+            </div>
+            <div class="logodiv">
+                <img src="/Fanta Logo.svg" alt="" width="148.34px" height="192px">
+            </div>
+            <div class="logodiv">
+                <img src="/maaza desktop-01.svg" alt="">
+            </div>
+            <div class="logodiv">
+                <img src="/Limca.svg" alt="">
+            </div>
+        </div>
+        <button class="viewallbutton">View All</button>
+        <div class="lastpara">        
+            <p>CHARGED BY THUMS UP: CAFFEINATED BEVERAGE. *CHARGED BY THUMS UP HAS 2.8 TIMES CAFFEINE COMPARED TO REGULAR 250ml THUMS UP. CONTAINS ADDED BERRY FLAVOURS. HIGH CAFFEINE: 62.5mg/250ml. NOT RECOMMENDED FOR CHILDERN, PREGNANT OR LACTATING WOMEN, PERSONS SENSITIVE TO CAFFEINE. CONSUME NOT MORE THAN 500ml PER DAY. THUMS UP IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. * MRP INCLUSIVE OF ALL TAXES. VEGETARIAN PRODUCT.</p>
+            <p>COCA-COLA: CARBONATED WATER. COCA-COLA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>COCA-COLA ZERO SUGAR: CARBONATED WATER. CONTAINS NON-CALORIC SWEETENER. THIS CARBONATED WATER CONTAINS AN ADMIXTURE OF SUCRALOSE AND ACESULFAME POTASSIUM. NOT RECOMMENDED FOR CHILDERN, PREGNANT AND LACTATING MOTHERS. TRADEMARK OWNER: THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>DIET COKE: CARBONATED WATER. CONTAINS AN ADMIXTURE OF ASPARTAME AND ACESULFAME POTASSIUM. NOT RECOMMENDED FOR PHENYLKETONURICS; FOR CHILDERN; PREGNANT AND LACTATING MOTHERS. COKE IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT. </p>
+            <p>SPRITE: CARBONATED WATER. SPRITE IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>FANTA: CARBONATED WATER. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>FANTA APPLE DELITE: CARBONATED FRUIT BEVERAGE. CONTAINS 10.5% APPLE JUICE. CONTAINS NO FRUIT PIECES. "BITE" REFERS TO CRISPY, CRUNCHY TASTE OF APPLE. FANTA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>MAAZA ORIGINAL: READY TO SERVE FRUIT DRINK. MAAZA MANGO CONTAINS BLEND OF MANGO PULP INCLUDING ALPHONSO. MAAZA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY</p>
+            <p>MAAZA AAM PANNA: READY TO SERVE FRUIT DRINK. MAAZA AAM PANNA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY</p>
+            <p>LIMCA: CARBONATED WATER. ADDED LIME AND LEMON FLAVORS. 'LIME AND LEMONI' IS A CREATIVE EXPRESSION USED FOR LIMCA. LIMCA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>LIMCA SPORTZ: READY TO SERVE FRUIT BEVERAGE. *CONTAINS CARBOHYDRATE (INCLUDES 2.2% GLUCOSE) AND WITH ELECTROLYTES (SODIUM, POTASSIUM, CHLORIDE) WHICH HELP IN FASTER REHYDRATION THROUGH QUICK REPLACEMENT OF FLUID AND SALTS LOST IN SWEAT. LIMCA IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+            <p>THUMS UP: CARBONATED WATER. THUMS UP IS A REGISTERED TRADEMARK OF THE COCA-COLA COMPANY. VEGETARIAN PRODUCT.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footcont">
+            <div style="display: flex;justify-content: space-between;">
+                <img src="/logo-white-large.svg" alt="">
+                <button class="viewallbutton">India | English</button>
+            </div>
+            <div><hr class="solid" color="white"></div>
+            <div class="logntext">
+                <div class="lists">
+                    <ul>
+                        <li style="font-family: TCCC-UnityText;line-height: 18px;text-decoration: none;color:#9b9b9b;font-size: 10px;">ABOUT US</li>
+                        <li>Our Company</li>
+                        <li>Media Center</li>
+                        <li>History</li>    
+                        <li>Careers</li>    
+                        <li>Leadership</li>
+                    </ul>
+                    <ul>
+                        <li style="font-family: TCCC-UnityText;line-height: 18px;text-decoration: none;color:#9b9b9b;font-size: 10px;">NEED HELP?</li>
+                        <li>FAQ</li>
+                        <li>Sitemap</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    <ul>
+                        <li> &nbsp; </li>
+                        <li>Terms of Use</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <div class="circle">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-youtube-play"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <div><hr class="solid" color="white"></div>
+            <p style="text-align: right;">© 2022 The Coca‑Cola Company. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<svg width="1280px" height="713px" viewBox="0 0 1280 713" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <linearGradient x1="42.7151444%" y1="6.21792686%" x2="51.5653522%" y2="36.2128041%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.910807292" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.0534473%" y1="31.5210537%" x2="89.7261639%" y2="86.1511796%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.910807292" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="H2-Copy" transform="translate(0.000000, -1.000000)" fill="url(#linearGradient-2)">
+            <g id="Light-angle" transform="translate(0.000000, 1.000000)">
+                <g id="Modules">
+                    <g>
+                        <g id="H2-Copy">
+                            <g id="Light-angle" transform="translate(640.000000, 402.000000) scale(-1, -1) translate(-640.000000, -402.000000) ">
+                                <g id="Rectangle-21-Copy-2-Clipped">
+                                    <g id="Rectangle-21-Copy-2">
+                                        <g id="Group" transform="translate(640.000000, 402.000000) scale(1, -1) translate(-640.000000, -402.000000) translate(0.000000, -0.000000)">
+                                            <g id="Mask">
+                                                <polygon id="path-4" points="0 0 1279.5361 0 1279.5361 804"></polygon>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
